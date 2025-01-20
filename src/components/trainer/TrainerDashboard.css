@@ -1,0 +1,608 @@
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
+  /* background-color: #f9f9f9; */
+}
+
+.dashboard-section h2 {
+  color: rgb(255,136,67);
+  margin-bottom: 10px;
+}
+
+.attendance-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  /* background-color: #000000; */
+  border-radius: 8px;
+}
+
+.attendance-box h3 {
+  font-size: 2em;
+  color: #00796b;
+  margin: 0;
+}
+
+.trainer-info {
+  background-color: #f0f0f0;  /* Light background color */
+  padding: 20px;              /* Add some space inside the box */
+  border-radius: 8px;         /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.notification-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.notification-item.read {
+  background-color: #d4edda; /* Green color for read notifications */
+  color: white;
+}
+
+.notification-item.unread {
+  background-color: lightgray; /* Gray color for unread notifications */
+}
+
+
+.unread {
+  background-color: #ffeeba; /* Light yellow for unread */
+}
+
+.read {
+  background-color: #d4edda; /* Light green for read */
+}
+
+
+
+.mark-as-read-button {
+  background-color: #060607;  /* Button background color */
+  color: #fff;               /* Text color */
+  border: none;              /* No border */
+  padding: 10px 20px;        /* Button padding */
+  font-size: 16px;           /* Font size */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;          /* Pointer cursor on hover */
+  animation: bounce 1s infinite; /* Bounce animation */
+  transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+}
+
+.mark-as-read-button:hover {
+  background-color: #e07116;  /* Change background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add box shadow on hover */
+  border-radius: 10px;  /* Slightly increase border-radius on hover */
+}
+
+
+.history-button {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.history-button:hover {
+  background-color: #117a8b;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close-modal-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.close-modal-button:hover {
+  background: #a71d2a;
+}
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card-animation {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(180deg, white , rgb(227, 104, 10));
+}
+
+.trainer-card {
+  background: linear-gradient(to right, white , rgb(227, 104, 10));
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+
+.col-6 {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.notification-item {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.mark-as-read-button {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.history-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.no-data,
+.no-notifications {
+  text-align: center;
+  color: #888;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close-modal-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+}
+
+
+/* CSS for the Trainer Dashboard */
+.dashboard-container {
+text-align: center;
+margin-top: 10px;
+}
+
+.dashboard-heading {
+font-size: 2.5rem;
+font-weight: bold;
+color: rgb(255, 136, 67); /* Trainer Dashboard text color */
+animation: fadeIn 1.5s ease-in-out;
+}
+
+.dashboard-description {
+font-size: 1.2rem;
+font-weight: bold;
+margin-top: 20px;
+animation: slideUp 1s ease-in-out;
+}
+
+
+/* Animation for the heading */
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+/* Animation for the description */
+@keyframes slideUp {
+from {
+  transform: translateY(20px);
+  opacity: 0;
+}
+to {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+/* Animation for icons */
+@keyframes bounce {
+0%, 100% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-10px);
+}
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+.dashboard-heading {
+  font-size: 2rem;
+}
+
+.dashboard-description {
+  font-size: 1rem;
+}
+
+}
+
+/* CSS for the custom history button */
+.history-button {
+display: inline-flex;
+align-items: center;
+background-color: #000000; /* Black background */
+color: white;
+font-weight: bold;
+font-size: 1.1rem;
+padding: 10px 20px;
+border: 2px solid rgb(255, 136, 67); /* Border color rgb(255, 136, 67) */
+border-radius: 50px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.history-button i {
+margin-right: 10px;
+font-size: 1.3rem; /* Icon size */
+}
+
+.history-button:hover {
+background-color: rgb(255, 136, 67); /* Hover background color */
+color: black; /* Change text color to black when hovered */
+transform: scale(1.1);
+box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+border-color: black; /* Black border on hover */
+}
+
+.history-button:active {
+transform: scale(1);
+box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-button:focus {
+outline: none;
+}
+
+.history-button:focus-visible {
+outline: 3px solid #000000; /* Focus outline with black */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.history-button {
+  font-size: 1rem;
+  padding: 8px 15px;
+}
+
+.history-button i {
+  font-size: 1.2rem;
+}
+}
+
+@media (max-width: 480px) {
+.history-button {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}
+
+.history-button i {
+  font-size: 1rem;
+}
+}
+.close-modal-button {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+padding: 10px 20px;
+border: none;
+background-color: #fa2010; /* Button color */
+color: white;
+font-size: 16px;
+cursor: pointer;
+transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect with shadow */
+.close-modal-button:hover {
+box-shadow: 0 4px 12px rgba(187, 38, 38, 0.2); /* Shadow effect */
+transform: scale(1.05); /* Slightly grow the button */
+}
+
+/* General Styles */
+.dashboard-section {
+padding: 20px;
+margin-bottom: 30px;
+}
+
+.section-title {
+font-size: 24px;
+font-weight: bold;
+display: flex;
+align-items: center;
+color: #333;
+}
+
+.section-title i {
+margin-right: 10px;
+}
+
+.card-animation {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-animation:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.work-item {
+/* background-color: #fff; */
+padding: 15px;
+margin-bottom: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.work-description {
+color: #666;
+}
+
+.work-details p {
+font-size: 14px;
+color: #888;
+}
+
+.work-icons {
+margin-top: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.work-icons i {
+font-size: 18px;
+color: #f36f6f;
+}
+
+.no-data {
+color: #aaa;
+}
+
+/* Image Style */
+.work-assignments-image {
+border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.dashboard-section {
+  padding: 10px;
+}
+
+.section-title {
+  font-size: 20px;
+}
+
+.work-item {
+  padding: 10px;
+}
+
+.work-icons {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.work-icons i {
+  font-size: 16px;
+}
+}
+
+/* wokr assignments */
+/* Box styling */
+.no-data {
+display: inline-block;
+padding: 20px;
+border: 2px solid rgb(250, 96, 6); /* Darker border for contrast */
+border-radius: 8px;
+background-color: #ffffff; /* Black background */
+color: white; /* White text */
+width: 80%;
+margin: 20px auto;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+/* Animation */
+.animated-box {
+animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+
+/* shechedule,visite,reports */
+/* Default styling for the columns */
+.custom-schedule, .custom-visit-log {
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect: decrease size slightly and change background color */
+.custom-schedule:hover, .custom-visit-log:hover {
+transform: scale(0.95);  /* Slight zoom-out effect */
+background:linear-gradient(180deg, rgba(255, 255, 255, 0.93), rgba(227, 104, 10, 0.93)); /* Light orange background */
+}
+
+/* Adding a box-shadow for hover to maintain focus */
+.custom-schedule:hover, .custom-visit-log:hover {
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.555);
+}
+
+/* Optional: Fade-in animation when the page loads */
+.custom-dashboard-section {
+opacity: 0;
+animation: fadeIn 1s forwards;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+to {
+  opacity: 1;
+}
+}

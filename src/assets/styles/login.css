@@ -1,0 +1,41 @@
+.login-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .role-selection {
+    margin: 20px auto;
+  }
+  
+  .role-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .role-btn {
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .role-btn.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .login-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

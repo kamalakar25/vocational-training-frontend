@@ -1,0 +1,56 @@
+/* Ensure this class is applied directly to the navbar */
+.navbar.bg-gradient {
+  background: linear-gradient(90deg, #ffb400, #ff7f50) !important; /* Added !important */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Debugging Step: Set a fallback solid color */
+.navbar.bg-gradient {
+  background-color: #ffb400 !important;
+}
+
+/* Brand Styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #ffffffb3 !important;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Toggler */
+.navbar-toggler {
+  border: none;
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2px;
+}

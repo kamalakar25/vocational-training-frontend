@@ -1,0 +1,253 @@
+.coordinator-dashboard {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.dashboard-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.summary-card {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.summary-card:hover {
+  transform: scale(1.05);
+}
+
+.summary-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.link-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link-btn:hover {
+  background-color: #c82333;
+}
+
+.attendance-management {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.attendance-list {
+  margin-top: 20px;
+}
+
+.attendance-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.attendance-list th,
+.attendance-list td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: center;
+}
+
+.attendance-list th {
+  background-color: #007bff;
+  color: white;
+}
+
+.attendance-logs {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+
+.form-container {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logs-list {
+  margin-top: 20px;
+}
+
+.logs-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.logs-list th,
+.logs-list td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: center;
+}
+
+.logs-list th {
+  background-color: #007bff;
+  color: white;
+}
+
+.carousel {
+  height: 80vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+/* Style for the carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+background-color: rgb(227, 104, 10); /* Button background color */
+border-radius: 50%; /* Optional: circular shape */
+width: 35px; /* Button width */
+height: 35px; /* Button height */
+padding: 5px; /* Padding for button size adjustment */
+position: absolute; /* Positioning relative to the carousel */
+top: 50%; /* Position vertically at the center */
+transform: translateY(-50%); /* Center the button vertically */
+z-index: 1; /* Ensure button stays above other elements */
+}
+
+/* Position for the 'previous' button */
+.carousel-control-prev {
+left: 10px; /* Adjust the horizontal position to the left */
+}
+
+/* Position for the 'next' button */
+.carousel-control-next {
+right: 10px; /* Adjust the horizontal position to the right */
+}
+
+/* Change the color of the icons to white */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+filter: invert(1); /* Changes icon color to white */
+}
+
+/* Hover effect for control buttons */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+background-color: rgb(204, 93, 9); /* Darker shade on hover */
+}
+
+/* Add these styles to your coordinator.css or any other stylesheet */
+
+/* Hover effect for entire list item */
+.list-group-item:hover {
+background-color: rgba(227, 104, 10, 0.1); /* Light background color on hover */
+transform: translateY(-5px); /* Slight lift effect */
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-hover:hover {
+transform: scale(1.2);
+transition: transform 0.3s ease-in-out;
+color: rgb(227, 104, 10); /* Keep the same icon color on hover */
+}
+
+/* Fade-in animation for list items */
+@keyframes fadeIn {
+0% {
+  opacity: 0;
+  transform: translateY(20px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.fade-in {
+animation: fadeIn 1s ease-out;
+}
+
+@media (max-width: 768px) {
+.carousel-item img {
+  opacity: 0.8; /* Slightly faded on mobile */
+}
+}
+
+/* General Styles */
+.carousel-inner img {
+width: 100%;
+height: auto;
+object-fit: cover; /* Ensures that the image covers the full space without distortion */
+}
+
+.carousel-item {
+height: 100%;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 767px) {
+/* For small devices like mobile phones */
+.carousel-inner {
+  height: 60vh; /* Adjusts the carousel height for smaller screens */
+}
+}
+
+@media (max-width: 576px) {
+/* For very small mobile devices */
+.carousel-inner {
+  height: 50vh; /* Further reduces the carousel height for very small screens */
+}
+}
+
+@media (max-width: 320px) {
+/* For ultra-small screens (like older smartphones) */
+.carousel-inner {
+  height: 40vh; /* Even smaller height for extremely small screens */
+}
+}

@@ -1,0 +1,256 @@
+.schedule-table{
+  overflow-x: auto;
+}
+
+.highlight {
+  background-color: #ffcccc; /* Light red for conflict rows */
+}
+
+.error-text {
+  color: red;
+  font-weight: bold;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-content {
+  padding: 20px;
+}
+
+.profile-image {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainer-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trainer-img:hover {
+  transform: scale(1.1);
+}
+
+.heading {
+  /* text-align: center; */
+  color: #e3680a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+button {
+  background: #e3680a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #c65706;
+}
+
+.edit-btn {
+  animation: fadeIn 1s ease-out;
+}
+
+.submit-btn {
+  animation: slideIn 1s ease-out;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #e3680a;
+  outline: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-row {
+    flex-direction: column;
+  }
+
+  .profile-content,
+  .profile-image {
+    width: 100%;
+  }
+
+  .trainer-img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+.container1 {
+  width: 100%;
+  max-width: 900px;
+  /* margin: 20px auto; */
+  /* padding: 20px; */
+  /* background-color: #f9f9f9; */
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile-content {
+  text-align: center;
+}
+
+
+.profile-card {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(255,136,67);;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+
+.edit-btn,
+.submit-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover,
+.submit-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.form-label {
+  /* color: white; */
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    width: 100%;
+    padding: 15px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* Button container to center it */
+.edit-btn-container {
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically if needed */
+margin: 20px 0;
+}
+
+/* Button styling */
+.edit-btn {
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+/* border: 2px solid rgb(255,136,67); Blue border */
+border-radius: 8px;
+background-color: rgb(255,136,67); /* Light background */
+color: rgb(255, 255, 255); /* Blue text */
+transition: all 0.3s ease; /* Smooth animation */
+cursor: pointer;
+box-shadow: #be5407 0px 6px 15px;
+}
+
+/* Hover effects */
+.edit-btn:hover {
+background-color: rgb(255,136,67); /* Change background to blue */
+color: rgb(255, 251, 251); /* Text changes to white */
+transform: scale(1.1); /* Slightly enlarge button */
+/* border: 2px solid rgb(0, 0, 0); Blue border */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+.edit-btn {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+}
+
+.submit-btn1 {
+background-color: rgb(255,136,67); /* Green background */
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submit-btn1:hover {
+background-color: rgb(255,136,67); /* Darker green for hover */
+transform: scale(1.1); /* Slightly increase button size on hover */
+}
+
+.submit-btn1:active {
+transform: scale(1); /* Reset size when button is clicked */
+}
+.form2 {
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.93), rgba(227, 104, 10, 0.93));
+padding: 20px;
+border: 1px solid rgb(255,136,67);
+border-radius: 5px;
+
+}

@@ -1,0 +1,106 @@
+.attendance-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    margin: 10px;
+  }
+  
+  .attendance-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Green background for Present */
+  .attendance-card.present {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+  }
+  
+  /* Red background for Absent */
+  .attendance-card.absent {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+  }
+  
+  .attendance-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .attendance-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Container styling */
+.attendance-container {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Heading styling */
+.attendance-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* List styling */
+.attendance-list {
+  display: flex; /* Inline card layout */
+  flex-direction: row;
+  gap: 15px; /* Space between cards */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Card styling */
+.attendance-item {
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+  width: 250px; /* Fixed card width */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.attendance-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Date, subject, and time styling */
+.attendance-date {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.attendance-subject {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.attendance-time {
+  font-size: 14px;
+  color: #666;
+}
