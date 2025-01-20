@@ -26,6 +26,7 @@ export default function Reports() {
   }, []);
 
   // Handle Report Submission
+  // Handle Report Submission
   const handleAddReport = async () => {
     if (!reportDetails.title || !reportDetails.description || !reportDetails.date) {
       alert("Please fill all fields.");
@@ -40,10 +41,8 @@ export default function Reports() {
 
       alert("Report added successfully!");
       setReportDetails({ title: "", description: "", date: "" });
-      // Close the modal programmatically
-      const modal = document.getElementById("addReportModal");
-      const modalInstance = bootstrap.Modal.getInstance(modal);
-      modalInstance.hide();
+      // Close the modal using Bootstrap's data attributes
+      document.getElementById("closeModalButton").click();
     } catch (error) {
       console.error("Error adding report:", error);
       alert("Failed to add report.");
@@ -90,6 +89,7 @@ export default function Reports() {
                 className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
+                id="closeModalButton"
               ></button>
             </div>
             <div className="modal-body">

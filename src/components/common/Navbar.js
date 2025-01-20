@@ -273,7 +273,7 @@ const Navbar = ({ setGeolocation, role }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-gradient">
       <div className="container-fluid">
-        <Link className="navbar-brand fw-bold text-uppercase" to="/">
+        <Link className="navbar-brand fw-bold text-uppercase">
           Vocational App
         </Link>
         <button
